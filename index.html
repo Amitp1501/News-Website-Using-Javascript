@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/global-news.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flax">
+            <a href="#" onclick="reload()" class="company-logo" id="logo">
+                <img src="Img/global-news.png" alt="company-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flax">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flax">
+                <input id="search-text" type="text" class="News-input" placeholder="Search Here ...">
+                <button id="search-button" class="search-botton">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flax" id="cards-container"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content flax">
+                <div class="social-icons">
+                    <a href="https://github.com/Amitp1501" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/amit-pandey-0a6324212" target="_blank" class="social-icon"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" class="social-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+                <p class="footer-text">&copy; 2024 Created by Amitpandey</p>
+            </div>
+        </div>
+    </footer>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://picsum.photos/400/200?grayscale" alt="News-img" id="News-img">
+            </div>
+            <div class="card-content">
+                <h3 id="News-title">This is the Title</h3>
+                <h6 class="News-source" id="News-source">End Gadget 26/08/2023</h6>
+                <p class="News-desc" id="News-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus
+                    vero praesentium ipsum magnam, magni quod earum incidunt amet possimus neque dolores maxime sit. Non
+                    blanditiis neque iste voluptas magni?</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
